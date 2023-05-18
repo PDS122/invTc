@@ -28,3 +28,12 @@ function toggleMenu(){
 document.querySelector(".toggle-botao").addEventListener("click", () => {
   toggleMenu()
 })
+
+const fontes = document.querySelector(".info-fontes")
+const ancoras = document.querySelectorAll(".ancora")
+
+ancoras.forEach(anc => {
+  anc.addEventListener("click", () => {
+    fontes.scrollIntoView({ behavior: "smooth" })
+  })
+})

@@ -14,6 +14,10 @@ a{
     text-decoration: none;
 }
 
+.ancora:hover{
+    cursor: pointer;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -144,11 +148,6 @@ a{
     color: #fff;
 }
 
-label{
-    font-family: "RobotoMono", sans-serif;
-    text-align: center;
-}
-
 .espaco-imagem{
     display: flex;
     flex-direction: column;
@@ -217,6 +216,8 @@ strong{
 
 .rodape a{
     color: #fff;
+    font-family: "RobotoMono", sans-serif;
+    font-size: 0.8rem;
 }
 
 .toggle-botao{

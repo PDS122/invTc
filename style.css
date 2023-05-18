@@ -176,6 +176,8 @@ a{
 
 .rodape a{
     color: #fff;
+    font-family: "RobotoMono", sans-serif;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 700px) {

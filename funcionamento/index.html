@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Funcionamento | PPR</title>
+    <title>Funcionamento | BFR</title>
 </head>
 <body>
     <div class="container">
@@ -46,10 +46,10 @@
                 <div class="corpo-artigo">
                     <div class="artigo-texto">
                         <p class="texto-info-s">
-                            O funcionamento do Arduino é a partir de códigos de programação que podem exercer diversos tipos de funções na placa.
+                            O funcionamento do Arduino é a partir de códigos de programação que podem exercer diversos tipos de funções na placa, usando sensores e outros módulos complexos.
                         </p>
                         <p class="texto-info-s">
-                            O Arduino é versátil e com o intuito de ser acessível e utilizável para estudos com eletrônica, por isso foi escolhido para a criação do dispositivo.
+                            O Arduino é versátil e com o intuito de ser acessível, tanto financeiramente como em utilização, sendo comumente usado em estudos com robótica e áreas afins.
                         </p>
                     </div>
                 </div>
@@ -64,37 +64,77 @@
                     </div>
                     <div class="artigo-texto">
                         <p class="texto-info-s">
-                            A programção do Arduino é feita em uma IDE usando uma linguagem derivada da linguagem C/C++, esse código é inserido via cabo USB, compilado e compreendido pela placa. O código é o que faz os sensores, leds e outros componentes funcionarem.
+                            A programção do Arduino é feita em uma IDE usando uma linguagem derivada da linguagem C++, esse código é inserido via cabo USB, compilado e compreendido pela placa. O código é o que faz os sensores, leds e outros componentes funcionarem.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="artigo">
+                <div class="corpo-artigo imagem-solo">
+                    <div class="espaco-imagem">
+                        <img src="../imgs/ideimg.png" alt="">
+                    </div>
+                    <div class="artigo-texto">
+                        <p class="texto-info-s">
+                            IDE
                         </p>
                     </div>
                 </div>
             </article>
             <div class="titulo-topico">
-                <h1>Módulo de Sensor Ultrassônico</h1>
+                <h1>Sobre os módulos</h1>
             </div>
             <article class="artigo">
                 <div class="corpo-artigo imagem-solo">
-                    <div name="imagem-1" class="espaco-imagem">
-                        <img src="../imgs/Printedcircuit.png" alt="">
-                    </div>
                     <div class="artigo-texto">
                         <p class="texto-info-s">
-                            Esse sensor emite uma onda sonora de alta frequência que quando refletida por um objeto resulta em eco que é convertido em sinais elétricos para vibrar o bracelete.
+                            Os módulos são usados junto com o código inserido no arduino para que o dispositivo funcione.
+                            Os módulos utilizados foram o módulo de sensor ultrassônico e o módulo de sensor de som.
+                        </p>
+                        <p class="texto-info-s">
+                            <strong>Sensor Ultrassônico</strong>
+                        </p>
+                        <div class="espaco-imagem">
+                            <img src="../imgs/sensultrasom.jpg" alt="">
+                        </div>
+                        <p class="texto-info-s">
+                            Se baseia na emissão de uma onda sonora de alta frequência que ao ser refletida
+                            em um objeto resulta em um eco, que é convertido em sinais elétricos e vibratório para
+                            o bracelete.
+                        </p>
+                        <p class="texto-info-s">
+                            <strong>Sensor de Som</strong>
+                        </p>
+                        <div class="espaco-imagem">
+                            <img src="../imgs/sensom.jpg" alt="">
+                        </div>
+                        <p class="texto-info-s">
+                            Mede a intensidade sonora do ambiente ao seu redor através de um microfone
+                            condensador, sendo que o limite de sua detecção pode ser estabelecido através de um
+                            potenciômetro localizado na própria placa do Arduíno.
                         </p>
                     </div>
                 </div>
             </article>
             <div class="titulo-topico">
-                <h1>Módulo de Sensor de Som</h1>
+                <h1>Código</h1>
             </div>
             <article class="artigo">
                 <div class="corpo-artigo imagem-solo">
-                    <div name="imagem-1" class="espaco-imagem">
-                        <img src="../imgs/Printedcircuit.png" alt="">
+                    <div class="espaco-imagem">
+                        <img src="../imgs/codus.png" alt="">
                     </div>
                     <div class="artigo-texto">
                         <p class="texto-info-s">
-                            Esse sensor mede a intensidade sonora do ambiente através de um microfone condensador, o limite da detecção é definido usando um potenciômetro na própria placa do Arduino.
+                            Esta parte de código faz com que o motor se ative quando um botão é pressionado, foi usado durante o teste no
+                            Tinkercad e depois adaptado para responder ao sensor de som assim como para o botao.
+                        </p>
+                        <p class="texto-info-s">
+                            Cada parte tem sua porta definida, isso corresponde a primeira função chamada setup. Nesse caso o botão/sensor é o input
+                            e o motor é o output.
+                        </p>
+                        <p class="texto-info-s">
+                            A função seguinte se mantém na espera de uma resposta do botão/sensor e quando a recebe altera o estado do motor por um curto período.
                         </p>
                     </div>
                 </div>

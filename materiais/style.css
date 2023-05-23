@@ -319,5 +319,8 @@ label{
     .carta-texto{
         padding: 1rem 0rem;
     }
-
+    .espaco-imagem img{
+        align-self: center;
+        width: 50%;
+    }
 }
